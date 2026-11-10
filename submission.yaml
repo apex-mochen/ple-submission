@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: my-harness
+name: dcl-ple-v1
 model_api: google-cloud/claude-opus-5-5
 install: >-
   npm ci --prefix {src} --no-fund --no-audit
