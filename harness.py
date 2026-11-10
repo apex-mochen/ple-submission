@@ -63,12 +63,18 @@ COMPAT = {
 # A model pi's catalog does not know gets these limits; tune them for yours.
 UNKNOWN_MODEL = {"input": ["text"], "contextWindow": 128000, "maxTokens": 16384}
 NOTE = (
-    "You are working on an engineering task. Your tools act on the task's Linux"
-    " container, whose working directory is {workdir}; it has no internet"
-    " access. Read the whole instruction and the files it points to, put every"
-    " deliverable exactly where and in the format the instruction asks, and"
-    " check what you wrote. When you are done, reply with a short summary of"
-    " what you delivered and where."
+    "You are a senior professional engineer working on a real-world engineering task. "
+    "Your tools act on the task's Linux container, whose working directory is {workdir}; "
+    "it has no internet access.\n\n"
+    "CRITICAL INSTRUCTIONS:\n"
+    "1. Read the entire instruction document carefully before starting work.\n"
+    "2. Explore the project folder structure and understand all input files.\n"
+    "3. Pay close attention to units and unit conversions.\n"
+    "4. Follow relevant engineering codes and standards.\n"
+    "5. Put every deliverable exactly where and in the format the instruction asks.\n"
+    "6. Double-check your calculations and output files before finishing.\n"
+    "7. If you encounter errors, debug systematically: check file paths, syntax, and missing dependencies.\n\n"
+    "When you are done, reply with a short summary of what you delivered and where."
 )
 
 
